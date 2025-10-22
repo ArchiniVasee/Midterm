@@ -1,7 +1,7 @@
 // Year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Theme toggle (reads data-bs-theme-value from buttons)
+// Theme toggle
 document.addEventListener("click", (e) => {
   const btn = e.target.closest("[data-bs-theme-value]");
   if (!btn) return;
@@ -9,7 +9,7 @@ document.addEventListener("click", (e) => {
   document.documentElement.setAttribute("data-bs-theme", value);
 });
 
-// Factorial calculator (assignment calls onclick='calculatePower()')
+// Factorial calculator (called by onclick="calculatePower()")
 function calculatePower() {
   const inputEl = document.getElementById("factorialInput");
   const outEl = document.getElementById("output");
@@ -26,14 +26,11 @@ function calculatePower() {
     return;
   }
 
-  // Use BigInt to support bigger values safely
   let fact = 1n;
   for (let i = 2n; i <= BigInt(n); i++) fact *= i;
 
   outEl.textContent = `${n}! = ${fact.toString()}`;
 }
 
-// Optional: Enter key triggers calculation
-document.getElementById("factorialInput").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") calculatePower();
-});
+// Expose globally (just in case)
+window.calculatePower = calculatePower;

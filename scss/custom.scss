@@ -1,10 +1,6 @@
-/* Show SCSS usage + Bootstrap theming build (no CDN) */
-$primary: red; /* requirement: set $primary to red */
-
-/* Import Bootstrap from node_modules (after npm i bootstrap sass) */
+$primary: red; // set theme color first
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-/* Your custom styles */
 .light-gray-header {
   background: #f2f2f2;
 }
@@ -18,7 +14,6 @@ $primary: red; /* requirement: set $primary to red */
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-/* requirement: target h1 via SCSS */
 h1 {
   color: $primary;
   font-weight: 700;
