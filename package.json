@@ -1,0 +1,24 @@
+{
+  "name": "midterm-cosc2956",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.93.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArchiniVasee/Midterm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArchiniVasee/Midterm/issues"
+  },
+  "homepage": "https://github.com/ArchiniVasee/Midterm#readme"
+}

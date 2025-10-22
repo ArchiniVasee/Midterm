@@ -1,0 +1,26 @@
+/* Show SCSS usage + Bootstrap theming build (no CDN) */
+$primary: red; /* requirement: set $primary to red */
+
+/* Import Bootstrap from node_modules (after npm i bootstrap sass) */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Your custom styles */
+.light-gray-header {
+  background: #f2f2f2;
+}
+
+.output-screen {
+  width: 100%;
+  min-height: 56px;
+  border: 1px solid #dee2e6;
+  border-radius: .375rem;
+  background: #fff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* requirement: target h1 via SCSS */
+h1 {
+  color: $primary;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
